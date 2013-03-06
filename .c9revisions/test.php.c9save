@@ -4,3 +4,9 @@
 {"ts":1360142998115,"patch":[[{"diffs":[[0,"hp\nphpin"],[1,"fo"],[0,"?>"]],"start1":3,"start2":3,"length1":10,"length2":12}]],"length":15,"saved":false}
 {"ts":1360142999427,"patch":[[{"diffs":[[0,"\nphpinfo"],[1,"()"],[0,"?>"]],"start1":5,"start2":5,"length1":10,"length2":12}]],"length":17,"saved":false}
 {"ts":1360143004255,"patch":[[{"diffs":[[0,"hpinfo()"],[1,";\n"],[0,"?>"]],"start1":7,"start2":7,"length1":10,"length2":12}]],"length":19,"saved":false}
+{"contributors":[],"silentsave":true,"ts":1362574902310,"patch":[[{"diffs":[[0,"info();\n"],[1,"\n"],[0,"?>"]],"start1":9,"start2":9,"length1":10,"length2":11}]],"length":20,"saved":false}
+{"ts":1362574903811,"patch":[[{"diffs":[[0,"info();\n"],[1,"//"],[0,"\n?>"]],"start1":9,"start2":9,"length1":11,"length2":13}]],"length":22,"saved":false}
+{"ts":1362574905494,"patch":[[{"diffs":[[0,"fo();\n//"],[1,"some uopd"],[0,"\n?>"]],"start1":11,"start2":11,"length1":11,"length2":20}]],"length":31,"saved":false}
+{"ts":1362574907227,"patch":[[{"diffs":[[0,"ome uopd"],[1,"ates"],[0,"\n?>"]],"start1":20,"start2":20,"length1":11,"length2":15}]],"length":35,"saved":false}
+{"ts":1362574909524,"patch":[[{"diffs":[[0,"//some u"],[-1,"o"],[0,"pdates\n?"]],"start1":17,"start2":17,"length1":17,"length2":16}]],"length":34,"saved":false}
+{"ts":1362574913420,"patch":[[{"diffs":[[0," updates"],[1," here"],[0,"\n?>"]],"start1":23,"start2":23,"length1":11,"length2":16}]],"length":39,"saved":false}
