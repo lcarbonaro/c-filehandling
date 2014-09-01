@@ -8,9 +8,13 @@ int main(void)
     
     fp = fopen("myfile.txt","r");   // open file for reading
     
-    fgets(line,sizeof(line),fp);  // read in a line of text from file
+    fgets(line,sizeof(line),fp);  // read in first line of text from file
     
-    printf("%s",line);  // output the line
+    while ( !feof(fp) )  // while not EOF, i.e. as long as we have not reached end of file
+    {
+        printf("%s",line);  // output the line we just read in
+        fgets(line,sizeof(line),fp);  // read in the next line
+    }
     
     fclose(fp);  // close the file
     

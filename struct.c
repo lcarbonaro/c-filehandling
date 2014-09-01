@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-struct Book {
+struct Book 
+{
     int id;
     char *title;              
     char *author;
@@ -12,7 +13,8 @@ struct Book {
 // alternatively can say char title, and then use strcpy() later 
 // this would require an extra include directive: #include <string.h>
 
-int main(void) {
+int main(void) 
+{
     
     struct Book abook;
     

@@ -1,1 +1,2 @@
 this is a line in my file
+this line says: I AM LINE TWO
