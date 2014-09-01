@@ -9,8 +9,8 @@ struct Book {
 };
 
 // note use of pointers above 
-// alternatively can say char title; and then use strcpy() later; 
-// this would require and extra include string.h above
+// alternatively can say char title, and then use strcpy() later 
+// this would require an extra include directive: #include <string.h>
 
 int main(void) {
     
