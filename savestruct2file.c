@@ -19,7 +19,7 @@ int main(void)
     {
         // input student name
         printf("Name: ");
-        scanf("%s", s.name);
+        scanf("%s", s.name);    // fgets() better to use but scanf() simpler; see ref.
         
         // input score
         printf("Score: ");    
@@ -39,3 +39,4 @@ int main(void)
 
 // ref:
 // http://www.cprogramming.com/tutorial/c/lesson3.html
+// http://faq.cprogramming.com/cgi-bin/smartfaq.cgi?answer=1044652485&id=1043284385
