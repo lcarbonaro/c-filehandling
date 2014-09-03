@@ -9,7 +9,7 @@ struct Book      // alternatively can use typedef struct { ...members...} Book;
     char *subject;
     float price;
     
-} Book;
+};
 
 // note use of pointers above 
 // alternatively can say char title, and then use strcpy() later 
@@ -24,7 +24,7 @@ int main(void)
     abook.title   = "Programming Is Fun";  
     abook.author  = "J J Smith";
     abook.subject = "IT";
-    abook.price = 25.99;
+    abook.price = 22.99;
     
     // if we were not using pointers, we would use strcpy()
     // e.g. strcpy( abook.title, "Programming Is Fun" );

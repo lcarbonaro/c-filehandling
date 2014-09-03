@@ -1,5 +1,0 @@
-Joe,100
-Jon,30
-Paula,99
-Hannah,87
-Josh,25
