@@ -1,13 +1,15 @@
 #include <stdio.h>
 
-struct Book 
+struct Book      // alternatively can use typedef struct { ...members...} Book;
 {
-    int id;
+    // member variables of the structure
+    int id;       
     char *title;              
     char *author;
     char *subject;
     float price;
-};
+    
+} Book;
 
 // note use of pointers above 
 // alternatively can say char title, and then use strcpy() later 
@@ -16,7 +18,7 @@ struct Book
 int main(void) 
 {
     
-    struct Book abook;
+    struct Book abook;   // if we use typedef, then: Book abook;
     
     abook.id = 1;
     abook.title   = "Programming Is Fun";  
@@ -35,3 +37,6 @@ int main(void)
     
     return 0;
 }
+
+// ref:
+// http://www.learn-c.org/en/Structures

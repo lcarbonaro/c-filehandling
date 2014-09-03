@@ -1,19 +1,19 @@
 #include <stdio.h>
 
-struct Student 
+typedef struct
 {
     char name[50];              
     int  score;
-};
+} Student;
 
 int main(void) 
 {
-    struct Student s;
+    Student s;
     
     int i;  // a counter
 
     FILE *fp;  
-    fp = fopen("datafile.csv","w");
+    fp = fopen("myfile.txt","w");
     
     for ( i = 1; i <= 5; i++ )   // input 5 records
     {
