@@ -26,6 +26,8 @@ int main(void)
     abook.subject = "IT";
     abook.price = 22.99;
     
+    
+    
     // if we were not using pointers, we would use strcpy()
     // e.g. strcpy( abook.title, "Programming Is Fun" );
     
