@@ -1,7 +1,7 @@
 testrepo
 ========
 
-my first github repo
+Just a test Github repository
 
 To push latest onto github:
 
