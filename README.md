@@ -1,13 +1,12 @@
 testrepo
 ========
 
-Just a test Github repository
+my first github repo
 
-To push latest onto Github, from terminal issue the following commands:
+To push latest onto github:
 
+From cloud9 terminal issue the following commands:
 git add --all .
-
 git commit -m "some comment"
-
 git push -u origin master
 
