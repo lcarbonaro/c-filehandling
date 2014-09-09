@@ -7,10 +7,10 @@ int main(void)
     MYSQL_RES *res;
     MYSQL_ROW row;
     
-    char *server = "0.0.0.0";
-    char *user = "lcarbonaro";
-    char *password = "";
-    char *database = "test";
+    char *server = "sql5.freesqldatabase.com";  // was: 0.0.0.0 for c9
+    char *user = "sql551836";                   // was: lcarbonaro for c9            
+    char *password = "hU9*tS5*";                // was: "" for c9
+    char *database = "sql551836";               // was: "test" for c9
 
     char *sql;
 
