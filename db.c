@@ -59,3 +59,4 @@ int main(void)
 // http://jhrokku1022.wordpress.com/2013/09/11/codeblocks-c-in-win-7-connects-to-mysql-in-linux/ (method 2 for Code::Blocks set-up)
 // note: also need to add libmysql to linker settings in code:blocks
 // if compiling this manually using gcc add parms -I/usr/include/mysql -lmysqlclient (for c9)
+// might need to "sudo apt-get install libmysqlclient-dev" to install mysql libs and header files
