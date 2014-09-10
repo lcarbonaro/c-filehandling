@@ -4,7 +4,7 @@
 int main(void)
 {
     MYSQL *conn;
-    MYSQL_RES *res;
+    MYSQL_RES *result;
     MYSQL_ROW row;
     
     char *server = "sql5.freesqldatabase.com";  // was: 0.0.0.0 for c9
@@ -21,34 +21,34 @@ int main(void)
 
     // connect to database
     // assumes MySQL server is up and running, and that database exists
-    if (!mysql_real_connect(conn, server,user, password, database, 0, NULL, 0))
+    if (!mysql_real_connect(conn, server,user, password, database, 0, NULL, 0))  // last 3 parms port, socket, flag are defaults
     {
         fprintf(stderr, "%s\n", mysql_error(conn));
     }
     else
     {
         // run sql query
-        sql = "select * from `test`";    // was: show tables
+        sql = "select * from `test`";    // sql command to fetch all records from table called test
 
-        if (mysql_query(conn, sql))   // run the sql
+        if (mysql_query(conn, sql))   // run the sql; zero (or false) means success; non-zero (or true) means error occurred
         {
             fprintf(stderr, "%s\n", mysql_error(conn));
         }
         else
         {
-            printf("SQL statement:%s\n",sql);
-            res = mysql_use_result(conn);  // assign query result to variable res
+            //printf("SQL statement:%s\n",sql);  
+            result = mysql_use_result(conn);  // assign query result to variable res
 
             // output query results
             printf("SQL results:\n");
-            while ((row = mysql_fetch_row(res)) != NULL)
+            while ((row = mysql_fetch_row(result)) != NULL)
             {
                 printf("%s: %s \n", row[0],row[1]);
             }
         }
 
         // free up result variable and close connection
-        mysql_free_result(res);
+        mysql_free_result(result);
         mysql_close(conn);
     }
 
